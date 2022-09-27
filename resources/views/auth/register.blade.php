@@ -2,10 +2,11 @@
 
 @section('content')
 
+<div class="container border">
 
         <form method="post" action="/register">
             @csrf
-            <h1>Crear cuenta</h1>
+            <h1 class="mt-3">Crear cuenta</h1>
             @include('layouts.partials.messages')
 
             <div class="form-floating mb-3">
@@ -33,6 +34,7 @@
             <div class="mb-3">
                 <a href="/login" class="">Login</a>
               </div>
-            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <button type="submit" class="btn btn-primary mb-3">Registrarse</button>
           </form>
+</div>
 @endsection
